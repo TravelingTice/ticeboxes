@@ -1,7 +1,11 @@
-import { ExampleComponent } from "."
+import { Box } from "."
 
 describe("ExampleComponent", () => {
   it("is truthy", () => {
-    expect(ExampleComponent).toBeTruthy()
+    expect(Box).toBeTruthy()
+  })
+
+  it("Renders a div", () => {
+    // const wrapper = mount()
   })
 })
