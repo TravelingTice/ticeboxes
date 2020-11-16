@@ -1,10 +1,9 @@
-import React from 'react'
+import React from "react"
 
-import { ExampleComponent } from 'ticeboxes'
-import 'ticeboxes/dist/index.css'
+import { Box } from "ticeboxes"
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return <Box text="Create React Library Example 😄" />
 }
 
 export default App
