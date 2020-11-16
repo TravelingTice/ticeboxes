@@ -1,9 +1,5 @@
-import React from "react"
+import BoxComponent from "./components/Box"
+import FlexComponent from "./components/Flex"
 
-interface Props {
-  text: string
-}
-
-export const Box: React.FC<Props> = ({ text }) => {
-  return <div className="testbox">{text}</div>
-}
+export const Box = BoxComponent
+export const Flex = FlexComponent
