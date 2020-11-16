@@ -1,9 +1,14 @@
-import React from "react"
+import React from 'react'
 
-import { Box } from "ticeboxes"
+import { Box, Flex } from 'practice'
 
 const App = () => {
-  return <Box text="Create React Library Example 😄" />
+  return (
+    <Box>
+      <Box>test</Box>
+      <Flex>test</Flex>
+    </Box>
+  )
 }
 
 export default App
