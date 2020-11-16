@@ -14,6 +14,12 @@ yarn add ticeboxes
 
 ## Usage
 
+First of all, because these elements basically render div elements with bootstrap classes, it is advised to have bootstrap loaded in your page. I like to do it this way in a CRA or other React project in the `index.js` file:
+
+```javascript
+import "bootstrap/dist/css/bootstrap.min.css";
+```
+
 ### Box
 
 You can use the `Box` component and put bootstrap margin and padding classes on it as attributes like so:
