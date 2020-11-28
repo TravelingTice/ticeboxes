@@ -1,5 +1,5 @@
-import React from 'react'
-import { createBootstrapClasses } from '../utils/createBootstrapClasses'
+import React from "react"
+import { createBootstrapClasses } from "../utils/createBootstrapClasses"
 
 type StringNumber = string | number
 
@@ -21,18 +21,23 @@ export interface BoxProps {
   border?: boolean
   h?: StringNumber
   w?: StringNumber
-  'text-center'?: boolean
-  'text-left'?: boolean
-  'text-right'?: boolean
+  "text-center"?: boolean
+  "text-left"?: boolean
+  "text-right"?: boolean
   style?: React.CSSProperties
   className?: string
+  id?: string
 }
 
 export const Box: React.FC<BoxProps> = (props) => {
   const classes = createBootstrapClasses(props)
 
   return (
-    <div style={props.style || undefined} className={classes.join(' ')}>
+    <div
+      style={props.style || undefined}
+      id={props.id || undefined}
+      className={classes.join(" ")}
+    >
       {props.children}
     </div>
   )
