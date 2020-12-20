@@ -25,7 +25,7 @@ export const Flex: React.FC<FlexProps> = (props) => {
     <div
       style={props.style || undefined}
       id={props.id || undefined}
-      className={`d-flex ${classes.join(" ")} ${props.className}`}
+      className={`d-flex ${classes.join(" ")} ${props.className || ""}`}
     >
       {props.children}
     </div>

@@ -36,7 +36,7 @@ export const Box: React.FC<BoxProps> = (props) => {
     <div
       style={props.style || undefined}
       id={props.id || undefined}
-      className={`${classes.join(" ")} ${props.className}`}
+      className={`${classes.join(" ")} ${props.className || ""}`}
     >
       {props.children}
     </div>
